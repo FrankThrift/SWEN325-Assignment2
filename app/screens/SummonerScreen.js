@@ -15,7 +15,7 @@ export default class SummonerScreen extends Component {
   render() {
 
     return(
-      <View style = {Style.background}>
+      <View style = {Style.listItem}>
 
       </View>
     );

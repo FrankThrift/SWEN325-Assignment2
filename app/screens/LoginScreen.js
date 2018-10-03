@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import {createStackNavigator,} from 'react-navigation';
 import { Fonts } from '../utils/Fonts';
+import  Style  from '../utils/Style';
 
 export default class LoginScreen extends Component {
   constructor(props){
@@ -47,47 +48,3 @@ export default class LoginScreen extends Component {
     );
   }
 }
-
-
-const Style = StyleSheet.create({
-  buttonText: {
-    fontFamily: Fonts.FrizQuadrataTTRegular,
-    fontSize: PixelRatio.getFontScale()*15,
-    color: '#000000'
-  },
-  button: {
-    padding: 10,
-    backgroundColor: '#EDB852',
-    borderStyle: 'solid',
-  },
-  large: {
-    fontFamily: Fonts.FrizQuadrataTTRegular,
-    fontSize: PixelRatio.getFontScale()*20,
-    textAlign: 'center',
-    color: '#EDB852',
-    paddingBottom: 20,
-  },
-  small: {
-    fontFamily: Fonts.FrizQuadrataTTRegular,
-    fontSize: PixelRatio.getFontScale()*15,
-    textAlign: 'center',
-    color: '#EDB852',
-    paddingBottom: 15,
-  },
-  input: {
-    fontFamily: Fonts.FrizQuadrataTTRegular,
-    fontSize: PixelRatio.getFontScale()*17.5,
-    textAlign: 'center',
-    backgroundColor: '#ffffff',
-    padding: 10,
-    paddingLeft: 50,
-    paddingRight: 50,
-    marginBottom: 15,
-  },
-  background: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#13181B',
-  },
-});

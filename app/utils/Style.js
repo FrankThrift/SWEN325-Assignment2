@@ -43,4 +43,25 @@ export default Style = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#13181B',
   },
+  listItem: {
+    backgroundColor: '#13181B',
+    textAlign: 'right',
+    flexDirection: 'row',
+    height: 110
+  },
+  listItemText:{
+    fontFamily: Fonts.FrizQuadrataTTRegular,
+    fontSize: PixelRatio.getFontScale()*20,
+    color: '#EDB852',
+    flex: 1
+  },
+  listItemImage: {
+    width: 100,
+    height: 100,
+    margin: 5
+  },
+  listItemBackground: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+  }
 });
