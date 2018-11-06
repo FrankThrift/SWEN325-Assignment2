@@ -47,6 +47,7 @@ export default class ChampionsScreen extends Component {
 
   _renderItem = ({item, index}) => (
     <ListItem
+      navigation = {this.props.navigation}
       ChampionName = {item.name}
       ChampionNote = {item.note}
       />

@@ -10,7 +10,6 @@ import {
   TouchableHighlight,
   View,
 } from 'react-native';
-import {createStackNavigator,} from 'react-navigation';
 import { Fonts } from '../utils/Fonts';
 import  Style  from '../utils/Style';
 
@@ -33,7 +32,7 @@ export default class LoginScreen extends Component {
           onChangeText={(summonerName) => this.setState({summonerName})}
         />
         <TouchableHighlight
-          onPress = {() =>this.props.navigation.replace('Welcome',{
+          onPress = {() => this.props.navigation.replace('Welcome',{
               userName: this.state.summonerName,
           })}
           style={Style.button}
