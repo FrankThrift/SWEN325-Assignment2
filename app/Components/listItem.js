@@ -17,6 +17,7 @@ import  Style  from '../utils/Style';
 export default class ListItem extends Component {
   render(){
     let imageUrl = "https://ddragon.leagueoflegends.com/cdn/8.15.1/img/champion/"+this.props.ChampionName+".png";
+    
     return (
 
       <View style = {Style.listItem}>

@@ -13,6 +13,14 @@ export default Style = StyleSheet.create({
     borderStyle: 'solid',
     marginBottom: 15,
   },
+  iconButton: {
+    flexWrap: 'wrap',
+    alignItems: 'flex-start',
+    flexDirection:'row',
+    backgroundColor: '#EDB852',
+    borderStyle: 'solid',
+    marginBottom: 15,
+  },
   large: {
     fontFamily: Fonts.FrizQuadrataTTRegular,
     fontSize: PixelRatio.getFontScale()*20,
@@ -43,6 +51,11 @@ export default Style = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#13181B',
   },
+  backgroundTest: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#13181B',
+  },
   listItem: {
     backgroundColor: '#13181B',
     textAlign: 'right',
@@ -60,8 +73,23 @@ export default Style = StyleSheet.create({
     height: 100,
     margin: 5
   },
+  abilityImage: {
+    width: 50,
+    height: 50,
+    margin: 3
+  },
   listItemBackground: {
     flex: 1,
     backgroundColor: '#FFFFFF',
-  }
+  },
+  image: {
+    marginTop: 50,
+    width: 250,
+    height: 220,
+  },
+  slide: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

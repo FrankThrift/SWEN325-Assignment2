@@ -18,9 +18,10 @@ export default class ChampionsScreen extends Component {
     this.state = { champs: new Array()};
   }
   componentDidMount(){
-    return fetch('https://ddragon.leagueoflegends.com/cdn/8.18.1/data/en_US/champion.json')
+    return fetch('https://ddragon.leagueoflegends.com/cdn/8.20.1/data/en_US/champion.json')
     .then((response) => {
       this.setState(previousState => {
+        //console.log(response._bodyText)
         let fuck = JSON.parse(response._bodyText)
         return { champs: fuck.data };
       });
